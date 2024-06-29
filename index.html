@@ -1,10 +1,12 @@
-<!-- <!DOCTYPE html>
+<!-- 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name Portfolio</title>
+    <title>Manikandan's Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <style>
         /* Custom CSS for additional styling */
         body {
@@ -22,7 +24,7 @@
     </style>
 </head>
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Portfolio</a>
@@ -33,6 +35,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -45,23 +50,22 @@
         </div>
     </nav>
 
-        <header class="bg-primary text-white text-center">
+
+    <header class="bg-primary text-white text-center" data-aos="fade-down">
         <div class="container d-flex align-items-center flex-column">
             <h1>MANIKANDAN E</h1>
-            <p class="lead">I AM A STUDENT IN GCE,TIRUNELVELI<br>I WANT TO BECOME A WEB DEVELOPER </p>
-         
-
+            <p class="lead">I AM A STUDENT IN GCE, TIRUNELVELI<br>I WANT TO BECOME A WEB DEVELOPER</p>
         </div>
     </header>
 
-    
-    <section id="about" class="bg-light py-5">
+
+    <section id="about" class="bg-light py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center">About Me</h2>
             <hr class="my-4">
             <div class="row">
                 <div class="col-lg-4 mx-auto">
-                    <img src="your-photo.jpg" class="img-fluid rounded-circle" alt="Your Photo">
+                    <img src="pro.jpg" class="img-fluid " alt="Your Photo">
                 </div>
                 <div class="col-lg-8 mx-auto">
                     <p>Hello! I'm Manikandan, currently pursuing my studies at Government College of Engineering, Thirunelveli, with a CGPA of 8.2 from Anna University. My ambition is to become a proficient web developer, creating versatile websites that handle both front-end and back-end operations seamlessly.
@@ -74,29 +78,60 @@
         </div>
     </section>
 
-        <section id="projects" class="py-5">
+
+
+
+    <section id="skills" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">Skill Sets</h2>
+            <hr class="my-4">
+            <div class="row">
+
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Java</h5> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center">Projects</h2>
             <hr class="my-4">
             <div class="row">
-                
-                <div class="col-md-4">
+
+                <div class="col-md-4" data-aos="fade-right">
                     <div class="card">
                         <img src="project1.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
-                            <h5 class="card-title">Student Databse Managemnt System</h5>
-                            <p class="card-text">it acts a crud application</p>
+                            <h5 class="card-title">Student Database Management System</h5>
+                            <p class="card-text">It acts as a CRUD application.</p>
                             <a href="#" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-4">
+
+                <div class="col-md-4" data-aos="fade-left">
                     <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Online Exam Registration</h5>
-                            <p class="card-text">it provides the user to register for exam and download  a hall ticket</p>
+                            <p class="card-text">It provides users the ability to register for exams and download hall tickets.</p>
                             <a href="#" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
@@ -105,8 +140,8 @@
         </div>
     </section>
 
-    
-    <section id="contact" class="bg-secondary text-white py-5">
+
+    <section id="contact" class="bg-secondary text-white py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center">Contact</h2>
             <hr class="my-4">
@@ -127,22 +162,37 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
+
+                    <div class="text-center mt-4">
+                        <a href="your-resume-link.pdf" class="text-white mx-2"><i class="fas fa-file-alt fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/your-github-profile" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2024 mani07. All rights reserved.</p>
+            <p>&copy; 2024 Manikandan. All rights reserved.</p>
         </div>
     </footer>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease-in-out', // Easing function for animations
+            once: true, // Whether animation should happen only once
+            mirror: false // Whether elements should animate out while scrolling past them
+        });
+    </script>
 </body>
 </html> -->
 <!DOCTYPE html>
@@ -153,6 +203,7 @@
     <title>Manikandan's Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         /* Custom CSS for additional styling */
         body {
@@ -224,35 +275,38 @@
         </div>
     </section>
 
-
-
      <!-- Skill Set Section -->
-    <section id="skills" class="py-5" data-aos="fade-up">
+     <section id="skills" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center">Skill Sets</h2>
             <hr class="my-4">
             <div class="row">
-                <!-- skill 1 -->
-                <div class="col-md-4" data-aos="fade-right">
-                    <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Python</h5>
-                        </div>
-                    </div>
+                <!-- Basic Skills -->
+                <div class="col-lg-6">
+                    <h3 class="text-center">Basic Level</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" data-aos="fade-right">HTML,CSS</li>
+                        <li class="list-group-item" data-aos="fade-right">c#</li>
+                        <li class="list-group-item" data-aos="fade-right">JavaScript</li>
+                        <li class="list-group-item" data-aos="fade-right">MySQL</li>
+                        <li class="list-group-item" data-aos="fade-right">Mangodb</li>
+
+                    </ul>
                 </div>
-                <!-- skill 2 -->
-                <div class="col-md-4" data-aos="fade-left">
-                    <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Java</h5> 
-                        </div>
-                    </div>
+                <!-- Intermediate Skills -->
+                <div class="col-lg-6">
+                    <h3 class="text-center">Intermediate Level</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" data-aos="fade-left">Python</li>
+                        <li class="list-group-item" data-aos="fade-left">Java</li>
+                        <li class="list-group-item" data-aos="fade-left">C</li>
+                        <li class="list-group-item" data-aos="fade-left">Bootstrap</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+                   
 
     <!-- Projects Section -->
     <section id="projects" class="py-5" data-aos="fade-up">
@@ -263,22 +317,22 @@
                 <!-- Project 1 -->
                 <div class="col-md-4" data-aos="fade-right">
                     <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <img src="sdbms.png" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Student Database Management System</h5>
                             <p class="card-text">It acts as a CRUD application.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/mani-mr07/Student-Database-Management-System-.git" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="col-md-4" data-aos="fade-left">
                     <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <img src="online_registration.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Online Exam Registration</h5>
                             <p class="card-text">It provides users the ability to register for exams and download hall tickets.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/mani-mr07/oose_project.git" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -308,6 +362,11 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
+                    <div class="text-center mt-4">
+                        <a href="resume.pdf" class="text-white mx-2"><i class="fas fa-file-alt fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/manikandan-e/" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/mani-mr07" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
